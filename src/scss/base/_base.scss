@@ -1,5 +1,7 @@
-
 html {
-  box-sizing: border-box;
+  font-size: 62.5%; //16px = 100% always. Allow  user to change font size
 }
 
+body {
+  box-sizing: border-box;
+}
