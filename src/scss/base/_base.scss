@@ -4,4 +4,10 @@ html {
 
 body {
   box-sizing: border-box;
+  background-color: $bc-color;
+}
+
+.container {
+  width: 117rem;
+  margin: 0 auto;
 }

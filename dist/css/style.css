@@ -5,6 +5,12 @@ html {
 
 body {
   box-sizing: border-box;
+  background-color: #fffaf3;
+}
+
+.container {
+  width: 117rem;
+  margin: 0 auto;
 }
 
 body {
@@ -13,9 +19,18 @@ body {
   font-style: normal;
   font-weight: 300;
   font-size: 1.8rem;
-  line-height: 150%;
+  line-height: 2.7rem;
 }
 
+a {
+  text-decoration: none;
+  color: #181818;
+}
+
+/* a:hover {
+  border-bottom: 2px solid $elements-color;
+  padding-bottom: 1rem;
+} */
 @font-face {
   font-family: "Cormorant Garamond";
   font-display: swap;
@@ -412,4 +427,37 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+.header {
+  padding: 3.9rem 0 8rem;
+}
+
+.header-nav__list {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav__item {
+  list-style: none;
+}
+
+.header-nav__item:not(:last-child) {
+  padding-right: 6.29rem;
+}
+
+.header-nav__link:hover {
+  border-bottom: 2px solid #9da57c;
+  padding-bottom: 1rem;
+}
+
+.button-book {
+  padding: 1.3rem 2.6rem;
+  gap: 1rem;
+  border: 1px solid #000;
+  text-transform: uppercase;
+  line-height: 2.1rem;
+}
+
+.button-book:hover {
+  background: #9da57c;
 }

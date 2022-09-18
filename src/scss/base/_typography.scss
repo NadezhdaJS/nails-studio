@@ -4,5 +4,14 @@ body {
   font-style: normal;
   font-weight: 300;
   font-size: 1.8rem;
-  line-height: 150%;
+  line-height: 2.7rem;
 }
+
+a {
+  text-decoration: none;
+  color: $text-color-primary;
+}
+/* a:hover {
+  border-bottom: 2px solid $elements-color;
+  padding-bottom: 1rem;
+} */
