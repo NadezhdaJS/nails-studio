@@ -13,6 +13,12 @@ body {
   margin: 0 auto;
 }
 
+.flex-sb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 body {
   color: #181818;
   font-family: "Raleway", sans-serif;
@@ -432,20 +438,20 @@ select {
   padding: 3.9rem 0 8rem;
 }
 
-.header-nav__list {
+.menu__list {
   display: flex;
   align-items: center;
 }
 
-.header-nav__item {
+.menu__item {
   list-style: none;
 }
 
-.header-nav__item:not(:last-child) {
-  padding-right: 6.29rem;
+.menu__item:not(:last-child) {
+  padding-right: 6.3rem;
 }
 
-.header-nav__link:hover {
+.menu__link:hover {
   border-bottom: 2px solid #9da57c;
   padding-bottom: 1rem;
 }

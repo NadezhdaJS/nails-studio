@@ -4,23 +4,23 @@
 
 .header-logo {
 }
-.header-nav {
+.menu {
 }
-.header-nav__list {
+.menu__list {
   display: flex;
   align-items: center;
 }
-.header-nav__item {
+.menu__item {
   list-style: none;
 }
 
-.header-nav__item:not(:last-child) {
-  padding-right: 6.29rem;
+.menu__item:not(:last-child) {
+  padding-right: 6.3rem;
 }
 
-.header-nav__link {
+.menu__link {
 }
-.header-nav__link:hover {
+.menu__link:hover {
   border-bottom: 2px solid $elements-color;
   padding-bottom: 1rem;
 }

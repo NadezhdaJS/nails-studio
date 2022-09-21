@@ -11,3 +11,9 @@ body {
   width: 117rem;
   margin: 0 auto;
 }
+
+.flex-sb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
