@@ -1,0 +1,37 @@
+.socials {
+  margin-top: 2.7rem;
+  display: flex;
+}
+
+/* .socials:not(:last-child) {
+  padding-right: 1.7rem;
+} */
+
+.social-media {
+  display: inline-flex;
+}
+
+.social-media:not(:last-child) {
+  margin-right: 1.7rem;
+}
+
+.instagram {
+  background-image: url(../img/instagram.svg);
+  width: 2.8rem;
+  height: 2.7rem;
+}
+.vk {
+  background-image: url(../img/vkontakte.svg);
+  width: 4.1rem;
+  height: 2.7rem;
+}
+.facebook {
+  background-image: url(../img/facebook.svg);
+  width: 3.2rem;
+  height: 3.2rem;
+}
+.mail {
+  background-image: url(../img/mail.svg);
+  width: 3.9rem;
+  height: 3.1rem;
+}

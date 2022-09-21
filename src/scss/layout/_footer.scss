@@ -1,0 +1,33 @@
+.footer {
+  padding-top: 7.4rem;
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+  }
+  &__logo {
+  }
+
+  &__menu {
+    display: flex;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    &:not(:last-child) {
+      padding-right: 3rem;
+    }
+  }
+  &__list-item {
+    padding-bottom: 1.5rem;
+    a:hover {
+      border-bottom: 2px solid $elements-color;
+      padding-bottom: 1rem;
+    }
+  }
+  &__actions {
+    display: flex;
+  }
+  &__get-actions {
+  }
+}

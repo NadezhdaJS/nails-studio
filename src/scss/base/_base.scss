@@ -24,6 +24,18 @@ body {
 .flex-sb {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex {
+  display: flex;
 }
