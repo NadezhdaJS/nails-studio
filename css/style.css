@@ -27,8 +27,20 @@ body {
 .flex-sb {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex {
+  display: flex;
 }
 
 body {
@@ -471,7 +483,6 @@ select {
 
 .menu__item {
   list-style: none;
-  display: flex;
 }
 
 .menu__item:not(:last-child) {
@@ -509,6 +520,37 @@ select {
   }
 }
 
+.footer {
+  padding-top: 7.4rem;
+}
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+}
+.footer__menu {
+  display: flex;
+}
+.footer__list {
+  display: flex;
+  flex-direction: column;
+}
+.footer__list:not(:last-child) {
+  padding-right: 3rem;
+}
+.footer__list-item {
+  padding-bottom: 1.5rem;
+}
+.footer__list-item a:hover {
+  border-bottom: 2px solid #9da57c;
+  padding-bottom: 1rem;
+}
+.footer__actions {
+  display: flex;
+}
+.subscribe-form__check {
+  display: block;
+}
+
 .button-book {
   padding: 1.3rem 2.6rem;
   gap: 1rem;
@@ -519,4 +561,44 @@ select {
 
 .button-book:hover {
   background: #9da57c;
+}
+
+.socials {
+  margin-top: 2.7rem;
+  display: flex;
+}
+
+/* .socials:not(:last-child) {
+  padding-right: 1.7rem;
+} */
+.social-media {
+  display: inline-flex;
+}
+
+.social-media:not(:last-child) {
+  margin-right: 1.7rem;
+}
+
+.instagram {
+  background-image: url(../img/instagram.svg);
+  width: 2.8rem;
+  height: 2.7rem;
+}
+
+.vk {
+  background-image: url(../img/vkontakte.svg);
+  width: 4.1rem;
+  height: 2.7rem;
+}
+
+.facebook {
+  background-image: url(../img/facebook.svg);
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.mail {
+  background-image: url(../img/mail.svg);
+  width: 3.9rem;
+  height: 3.1rem;
 }
