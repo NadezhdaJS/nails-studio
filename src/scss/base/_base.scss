@@ -10,10 +10,20 @@ body {
 .container {
   width: 117rem;
   margin: 0 auto;
+  @media (max-width: 1270px) {
+    width: calc(100vw - 7%);
+  }
+  /*  @media (max-width: 767px) {
+    width: 70.8rem;
+  }
+  @media (max-width: 320px) {
+    width: 29rem;
+  } */
 }
 
 .flex-sb {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
