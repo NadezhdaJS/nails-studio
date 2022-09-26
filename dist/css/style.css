@@ -1,4 +1,8 @@
 @charset "UTF-8";
+.footer__get-actions {
+  font-family: "Cormorant Garamond", serif;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -547,10 +551,18 @@ select {
 .footer__actions {
   display: flex;
 }
+.footer__get-actions {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.6rem;
+  line-height: 4.4rem;
+  max-width: 27rem;
+  padding-bottom: 2.2rem;
+}
+
 .subscribe-form__check {
   display: block;
 }
-
 .button-book {
   padding: 1.3rem 2.6rem;
   gap: 1rem;

@@ -29,5 +29,12 @@
     display: flex;
   }
   &__get-actions {
+    @extend %font-second;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.6rem;
+    line-height: 4.4rem;
+    max-width: 27rem;
+    padding-bottom: 2.2rem;
   }
 }
