@@ -564,18 +564,30 @@ select {
   padding-bottom: 2.2rem;
 }
 
+.subscribe-form {
+  position: relative;
+}
 .subscribe-form__input {
   border: 1px solid #000;
   padding: 1.2rem 1.4rem;
-  max-width: 27rem;
+  width: 27rem;
+  width: 100%;
+}
+.subscribe-form__btn {
+  background: url("../svg/arrow.svg") no-repeat;
+  width: 4.9rem;
+  height: 1rem;
+  border: none;
+  position: absolute;
+  top: 2.3rem;
+  right: 2.5rem;
 }
 .subscribe-form__shadow-checkbox {
   width: 2.6rem;
   height: 2.6rem;
   opacity: 0;
 }
-.subscribe-form__black-checkbox {
-  background: url("../svg/check-square-light.svg") no-repeat;
+.subscribe-form__base-checkbox {
   background-size: cover;
   width: 2.6rem;
   height: 2.6rem;
@@ -584,10 +596,19 @@ select {
   left: 0;
   cursor: pointer;
 }
+.subscribe-form__black-checkbox {
+  background: url("../svg/check-square-light.svg") no-repeat;
+}
+.subscribe-form__empty-checkbox {
+  background: url("../svg/square-light.svg") no-repeat;
+  display: none;
+}
 .subscribe-form__check {
   display: block;
   position: relative;
   padding-top: 2.2rem;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
 }
 .subscribe-form__link {
   border-bottom: 1px solid #000;
