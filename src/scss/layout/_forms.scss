@@ -1,7 +1,7 @@
 .subscribe-form {
   position: relative;
   &__input {
-    border: 1px solid #000;
+    @extend %border-thin;
     padding: 1.2rem 1.4rem;
     width: 27rem;
     width: 100%;
