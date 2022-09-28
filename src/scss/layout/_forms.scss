@@ -1,19 +1,27 @@
 .subscribe-form {
+  position: relative;
   &__input {
     border: 1px solid #000;
     padding: 1.2rem 1.4rem;
-    max-width: 27rem;
+    width: 27rem;
+    width: 100%;
   }
 
   &__btn {
+    background: url("../svg/arrow.svg") no-repeat;
+    width: 4.9rem;
+    height: 1rem;
+    border: none;
+    position: absolute;
+    top: 2.3rem;
+    right: 2.5rem;
   }
   &__shadow-checkbox {
     width: 2.6rem;
     height: 2.6rem;
     opacity: 0;
   }
-  &__black-checkbox {
-    background: url("../svg/check-square-light.svg") no-repeat;
+  &__base-checkbox {
     background-size: cover;
     width: 2.6rem;
     height: 2.6rem;
@@ -22,10 +30,21 @@
     left: 0;
     cursor: pointer;
   }
+
+  &__black-checkbox {
+    background: url("../svg/check-square-light.svg") no-repeat;
+  }
+  &__empty-checkbox {
+    background: url("../svg/square-light.svg") no-repeat;
+    display: none;
+  }
+
   &__check {
     display: block;
     position: relative;
     padding-top: 2.2rem;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
   }
   &__link {
     border-bottom: 1px solid $black-color;
