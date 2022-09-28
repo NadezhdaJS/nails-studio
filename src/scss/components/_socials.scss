@@ -8,30 +8,26 @@
 } */
 
 .social-media {
-  display: inline-flex;
+  height: 2.7rem;
+  width: 100%;
+  max-width: 4.1rem;
+  background-size: 3.6rem 2.7rem;
+  background-repeat: no-repeat;
 }
 
 .social-media:not(:last-child) {
-  margin-right: 1.7rem;
+  margin-right: 1.2rem;
 }
 
 .instagram {
-  background-image: url(../img/instagram.svg);
-  width: 2.8rem;
-  height: 2.7rem;
+  background-image: url(../svg/instagram.svg);
 }
 .vk {
-  background-image: url(../img/vkontakte.svg);
-  width: 4.1rem;
-  height: 2.7rem;
+  background-image: url(../svg/vkontakte.svg);
 }
 .facebook {
-  background-image: url(../img/facebook.svg);
-  width: 3.2rem;
-  height: 3.2rem;
+  background-image: url(../svg/facebook.svg);
 }
 .mail {
-  background-image: url(../img/mail.svg);
-  width: 3.9rem;
-  height: 3.1rem;
+  background-image: url(../svg/mail.svg);
 }

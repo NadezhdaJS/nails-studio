@@ -3,6 +3,10 @@
   font-family: "Cormorant Garamond", serif;
 }
 
+.button-book {
+  border: 1px solid #000;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -560,13 +564,39 @@ select {
   padding-bottom: 2.2rem;
 }
 
+.subscribe-form__input {
+  border: 1px solid #000;
+  padding: 1.2rem 1.4rem;
+  max-width: 27rem;
+}
+.subscribe-form__shadow-checkbox {
+  width: 2.6rem;
+  height: 2.6rem;
+  opacity: 0;
+}
+.subscribe-form__black-checkbox {
+  background: url("../svg/check-square-light.svg") no-repeat;
+  background-size: cover;
+  width: 2.6rem;
+  height: 2.6rem;
+  position: absolute;
+  top: 3rem;
+  left: 0;
+  cursor: pointer;
+}
 .subscribe-form__check {
   display: block;
+  position: relative;
+  padding-top: 2.2rem;
 }
+.subscribe-form__link {
+  border-bottom: 1px solid #000;
+  padding-bottom: 0.05rem;
+}
+
 .button-book {
   padding: 1.3rem 2.6rem;
   gap: 1rem;
-  border: 1px solid #000;
   text-transform: uppercase;
   line-height: 2.1rem;
 }
@@ -584,33 +614,29 @@ select {
   padding-right: 1.7rem;
 } */
 .social-media {
-  display: inline-flex;
+  height: 2.7rem;
+  width: 100%;
+  max-width: 4.1rem;
+  background-size: 3.6rem 2.7rem;
+  background-repeat: no-repeat;
 }
 
 .social-media:not(:last-child) {
-  margin-right: 1.7rem;
+  margin-right: 1.2rem;
 }
 
 .instagram {
-  background-image: url(../img/instagram.svg);
-  width: 2.8rem;
-  height: 2.7rem;
+  background-image: url(../svg/instagram.svg);
 }
 
 .vk {
-  background-image: url(../img/vkontakte.svg);
-  width: 4.1rem;
-  height: 2.7rem;
+  background-image: url(../svg/vkontakte.svg);
 }
 
 .facebook {
-  background-image: url(../img/facebook.svg);
-  width: 3.2rem;
-  height: 3.2rem;
+  background-image: url(../svg/facebook.svg);
 }
 
 .mail {
-  background-image: url(../img/mail.svg);
-  width: 3.9rem;
-  height: 3.1rem;
+  background-image: url(../svg/mail.svg);
 }

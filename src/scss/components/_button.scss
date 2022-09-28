@@ -1,9 +1,10 @@
 .button-book {
   padding: 1.3rem 2.6rem;
   gap: 1rem;
-  border: 1px solid $headings-color;
   text-transform: uppercase;
   line-height: 2.1rem;
+
+  @extend %border-thin;
 }
 .button-book:hover {
   background: $elements-color;

@@ -63,14 +63,17 @@
       <div class="footer__actions flex-column">
         <p class="footer__get-actions">Узнавайте первым о новых акциях!</p>
 
-        <div class="subscribe-form">
-          <input type="email" class="subscribe-form__input" placeholder="Ваш e-mail">
+        <form class="subscribe-form">
+          <input type="email" class="subscribe-form__input" placeholder="Ваш e-mail"
+            class="subscribe-form__placeholder">
           <button class="subscribe-form__btn"></button>
-          <label for="check" class="subscribe-form__check"> <input type="checkbox" name="" id=""> <span
-              class="subscribe-form__checkbox"></span> Я соглашаюсь с
-            условиями <br> <a href="#" class="subscribe-form__link">Политики
+          <!-- пишем для label for="SOME-ID" и для прикрепленного к нему input checkbox добавляем id с тем что указали в for. В данном случае SOME-ID -->
+          <label for="check" class="subscribe-form__check"> <input type="checkbox" name="" id="check" checked="checked"
+              class="subscribe-form__shadow-checkbox">
+            <span class="subscribe-form__black-checkbox"></span>
+            Я соглашаюсь с условиями <br> <a href="#" class="subscribe-form__link">Политики
               конфиденциальности</a> </label>
-        </div>
+        </form>
       </div>
     </div>
   </div>
