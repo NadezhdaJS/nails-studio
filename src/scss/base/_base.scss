@@ -22,8 +22,10 @@ body {
 }
 
 .flex-sb {
-  display: flex;
   justify-content: space-between;
+}
+
+.flex-wrap {
   flex-wrap: wrap;
 }
 
