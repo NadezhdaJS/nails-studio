@@ -615,6 +615,9 @@ select {
   gap: 1rem;
   text-transform: uppercase;
   line-height: 2.1rem;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.2s;
 }
 
 .button-book:hover {
