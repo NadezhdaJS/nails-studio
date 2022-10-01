@@ -11,20 +11,20 @@
 <body>
 	<header class="header">
   <div class="container">
-    <div class="flex-sb items-center">
+    <div class="flex flex-sb flex-wrap items-center">
       <a href="" class="">
         <img src="img/logo-header.png" alt="Лого">
       </a>
       <nav class="menu">
         <ul class="menu__list">
           <li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
-          <li class="menu__item"><a href="#" class="menu__link">Прайс </a></li>
-          <li class="menu__item"><a href="#" class="menu__link"> Отзывы</a></li>
-          <li class="menu__item"><a href="#" class="menu__link">Студии </a></li>
-          <li class="menu__item"><a href="#" class="menu__link"> Блог</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Прайс</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Отзывы</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Студии</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Блог</a></li>
         </ul>
       </nav>
-      <a href="tel:+78126605088" class="menu__phone"> +7 (812) 660-50-88</a></li>
+      <a href="tel:+78126605088" class="menu__phone">+7 (812) 660-50-88</a></li>
       <button type="button" class="button-book">Записаться</button>
     </div>
   </div>
@@ -34,16 +34,16 @@
 	</main>
 	<footer class="footer">
   <div class="container">
-    <div class="flex-sb">
+    <div class="flex flex-sb flex-wrap">
       <div class="footer__contacts">
         <div class="footer__logo">
           <a href="#"><img src="img/logo-footer.png" alt="Лого"></a>
         </div>
-        <div class="socials">
-          <a class=" social-media instagram" href="#"></a>
-          <a class=" social-media vk" href="#"></a>
-          <a class=" social-media facebook" href="#"></a>
-          <a class=" social-media mail" href="#"></a>
+        <div class="socials flex">
+          <a class="social-media instagram" href="#"></a>
+          <a class="social-media vk" href="#"></a>
+          <a class="social-media facebook" href="#"></a>
+          <a class="social-media mail" href="#"></a>
         </div>
       </div>
       <nav class="footer__menu">
@@ -64,16 +64,15 @@
         <p class="footer__get-actions">Узнавайте первым о новых акциях!</p>
 
         <form class="subscribe-form">
-          <input type="email" class="subscribe-form__input" placeholder="Ваш e-mail"
-            class="subscribe-form__placeholder">
+          <input type="email" class="subscribe-form__input" placeholder="Ваш e-mail" class="subscribe-form__placeholder">
           <button class="subscribe-form__btn"></button>
           <!-- пишем для label for="SOME-ID" и для прикрепленного к нему input checkbox добавляем id с тем что указали в for. В данном случае SOME-ID -->
-          <label for="check" class="subscribe-form__check"> <input type="checkbox" name="" id="check" checked="checked"
-              class="subscribe-form__shadow-checkbox">
-            <span class="subscribe-form__black-checkbox subscribe-form__base-checkbox"></span> <span
-              class="subscribe-form__empty-checkbox subscribe-form__base-checkbox"></span>
-            Я соглашаюсь с условиями <br> <a href="#" class="subscribe-form__link">Политики
-              конфиденциальности</a> </label>
+          <label for="check" class="subscribe-form__check">
+            <input type="checkbox" name="" id="check" checked="checked" class="subscribe-form__shadow-checkbox">
+            <span class="subscribe-form__black-checkbox subscribe-form__base-checkbox"></span>
+            <span class="subscribe-form__empty-checkbox subscribe-form__base-checkbox"></span>
+            Я соглашаюсь с условиями <br> <a href="#" class="subscribe-form__link">Политики конфиденциальности</a>
+          </label>
         </form>
       </div>
     </div>
