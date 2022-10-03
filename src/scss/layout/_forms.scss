@@ -5,7 +5,7 @@
     padding: 1.2rem 1.4rem;
     width: 27rem;
     width: 100%;
-    border: none;
+    outline: none; //убираем обводку при наведении
   }
 
   &__btn {

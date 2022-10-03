@@ -1,0 +1,15 @@
+.main-section {
+  &__description {
+    max-width: 82rem;
+    position: relative;
+    z-index: 100;
+  }
+
+  &__oval-image {
+    position: absolute;
+    max-width: 62rem;
+    top: 9.9rem;
+    left: 57rem;
+    z-index: 2;
+  }
+}

@@ -11,7 +11,24 @@ a {
   text-decoration: none;
   color: $text-color-primary;
 }
-/* a:hover {
-  border-bottom: 2px solid $elements-color;
-  padding-bottom: 1rem;
-} */
+
+.link {
+  text-decoration: underline;
+}
+
+.h1 {
+  padding-top: 0.9rem;
+  padding-bottom: 7rem;
+  font-size: 8rem;
+  @extend %font-second;
+  font-weight: 300;
+  line-height: 9.6rem;
+  font-style: italic;
+  &__uppercase-text {
+    @extend %font-third;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.7em;
+  }
+}

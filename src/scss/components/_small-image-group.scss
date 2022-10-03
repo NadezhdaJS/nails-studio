@@ -1,0 +1,9 @@
+.small-image-group {
+  padding-top: 11.5rem;
+  .img {
+    max-width: 16rem;
+  }
+  &__second {
+    margin: 0 2.7rem;
+  }
+}

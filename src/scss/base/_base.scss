@@ -6,6 +6,11 @@ body {
   box-sizing: border-box;
   background-color: $bc-color;
 }
+.content-box {
+  max-width: 144rem;
+  margin: 0 auto;
+  position: relative;
+}
 
 .container {
   width: 117rem;
@@ -40,4 +45,26 @@ body {
 
 .flex {
   display: flex;
+}
+
+.pl-3 {
+  padding-left: 3rem;
+}
+
+.blur {
+  width: 33.5rem;
+  height: 33.5rem;
+  background: $bc-ovals;
+  filter: blur(12.5rem);
+  border-radius: 50%;
+  position: absolute;
+  z-index: 100;
+  &-left {
+    top: 16rem;
+    left: 0;
+  }
+  &-right {
+    top: 66rem;
+    left: 98rem;
+  }
 }

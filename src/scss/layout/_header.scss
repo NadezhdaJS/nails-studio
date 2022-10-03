@@ -1,6 +1,7 @@
 .header {
   padding: 3.9rem 0 8rem;
   width: 100%;
+  z-index: 100;
 }
 
 .menu {
@@ -31,8 +32,6 @@
     }
   }
 
-  &__link {
-  }
   &__link:hover {
     border-bottom: 2px solid $elements-color;
     padding-bottom: 1rem;
@@ -49,4 +48,8 @@
       display: none;
     }
   }
+}
+
+.logo {
+  z-index: 102;
 }
