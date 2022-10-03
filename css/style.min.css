@@ -1,6 +1,10 @@
 @charset "UTF-8";
-.footer__get-actions {
+.advantages__number, .footer__get-actions, .h1 {
   font-family: "Cormorant Garamond", serif;
+}
+
+.h1__uppercase-text {
+  font-family: "Cormorant SC", serif;
 }
 
 .button-book, .subscribe-form__input {
@@ -14,6 +18,12 @@ html {
 body {
   box-sizing: border-box;
   background-color: #fffaf3;
+}
+
+.content-box {
+  max-width: 144rem;
+  margin: 0 auto;
+  position: relative;
 }
 
 .container {
@@ -53,6 +63,28 @@ body {
   display: flex;
 }
 
+.pl-3 {
+  padding-left: 3rem;
+}
+
+.blur {
+  width: 33.5rem;
+  height: 33.5rem;
+  background: #e3ebc1;
+  filter: blur(12.5rem);
+  border-radius: 50%;
+  position: absolute;
+  z-index: 100;
+}
+.blur-left {
+  top: 16rem;
+  left: 0;
+}
+.blur-right {
+  top: 66rem;
+  left: 98rem;
+}
+
 body {
   color: #181818;
   font-family: "Raleway", sans-serif;
@@ -67,10 +99,25 @@ a {
   color: #181818;
 }
 
-/* a:hover {
-  border-bottom: 2px solid $elements-color;
-  padding-bottom: 1rem;
-} */
+.link {
+  text-decoration: underline;
+}
+
+.h1 {
+  padding-top: 0.9rem;
+  padding-bottom: 7rem;
+  font-size: 8rem;
+  font-weight: 300;
+  line-height: 9.6rem;
+  font-style: italic;
+}
+.h1__uppercase-text {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.7em;
+}
+
 @font-face {
   font-family: "Cormorant Garamond";
   font-display: swap;
@@ -104,6 +151,13 @@ a {
   font-display: swap;
   src: url("../fonts/Raleway-Medium.woff2") format("woff2"), url("../fonts/Raleway-Medium.woff") format("woff");
   font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cormorant SC";
+  font-display: swap;
+  src: url("../fonts/CormorantSC-Regular.woff2") format("woff2"), url("../fonts/CormorantSC-Regular.woff") format("woff");
+  font-weight: 400;
   font-style: normal;
 }
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -471,6 +525,7 @@ select {
 .header {
   padding: 3.9rem 0 8rem;
   width: 100%;
+  z-index: 100;
 }
 
 .menu__list {
@@ -526,6 +581,10 @@ select {
   }
 }
 
+.logo {
+  z-index: 102;
+}
+
 .footer {
   padding-top: 7.4rem;
 }
@@ -569,6 +628,7 @@ select {
   padding: 1.2rem 1.4rem;
   width: 27rem;
   width: 100%;
+  outline: none;
 }
 .subscribe-form__btn {
   background: url("../svg/arrow.svg") no-repeat;
@@ -620,6 +680,7 @@ select {
   background-color: transparent;
   cursor: pointer;
   transition: all 0.2s;
+  display: inline-block;
 }
 
 .button-book:hover {
@@ -656,4 +717,41 @@ select {
 
 .mail {
   background-image: url(../svg/mail.svg);
+}
+
+.small-image-group {
+  padding-top: 11.5rem;
+}
+.small-image-group .img {
+  max-width: 16rem;
+}
+.small-image-group__second {
+  margin: 0 2.7rem;
+}
+
+.advantages {
+  display: flex;
+  padding-top: 15rem;
+  padding-bottom: 10rem;
+  text-align: center;
+  max-width: 83rem;
+  justify-content: space-between;
+}
+
+.advantages__number {
+  font-size: 7.2rem;
+  line-height: 8.7rem;
+}
+
+.main-section__description {
+  max-width: 82rem;
+  position: relative;
+  z-index: 100;
+}
+.main-section__oval-image {
+  position: absolute;
+  max-width: 62rem;
+  top: 9.9rem;
+  left: 57rem;
+  z-index: 2;
 }
