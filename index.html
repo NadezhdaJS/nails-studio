@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="ru">
-<div class="content-box">
 	 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="css/style.min.css?_v=20221004160649">
 	<title>Главная</title>
 </head>
 
 	<body>
-		<header class="header">
+		<div class="content-box">
+			<header class="header">
   <div class="container">
     <div class="flex flex-sb flex-wrap items-center">
       <a href="" class="logo">
-        <img src="img/logo-header.png" alt="Лого">
+        <picture><source srcset="img/logo-header.webp" type="image/webp"><img src="img/logo-header.png" alt="Лого"></picture>
       </a>
       <nav class="menu">
         <ul class="menu__list">
@@ -30,54 +30,50 @@
     </div>
   </div>
 </header>
-		<main>
-			<div class="blur blur-left"></div>
-			<div class="blur blur-right"></div>
-			<section class="main-section ">
-				<div class="container">
-					<div class="main-section__description">
-						<p>XNAILS - студии маникюра в Санкт-Петербурге</p>
-						<h1 class="h1">
-							Мы знаем все о <span class="h1__uppercase-text">красивом</span> и <span
-								class="h1__uppercase-text">качественном</span> покрытии
-						</h1>
-						<div class="flex items-center">
-							<button type="button" class="button-book">Записаться</button>
-
-							<a href="" class="link pl-3">Узнать стоимость</a>
+			<main>
+				<div class="blur blur-left"></div>
+				<div class="blur blur-right"></div>
+				<section class="main-section">
+					<div class="container">
+						<div class="main-section__description">
+							<p>XNAILS - студии маникюра в Санкт-Петербурге</p>
+							<h1 class="h1">
+								Мы знаем все о <span class="h1__uppercase-text">красивом</span> и <span
+									class="h1__uppercase-text">качественном</span> покрытии
+							</h1>
+							<div class="flex items-center">
+								<button type="button" class="button-book">Записаться</button>
+								<a href="" class="link ml-3">Узнать стоимость</a>
+							</div>
+							<div class="small-image-group flex">
+								<picture><source srcset="img/first-image.webp" type="image/webp"><img src="img/first-image.png" alt="" class="small-image-group__first img"></picture>
+								<picture><source srcset="img/second-image.webp" type="image/webp"><img src="img/second-image.png" alt="" class="small-image-group__second img"></picture>
+								<picture><source srcset="img/third-image.webp" type="image/webp"><img src="img/third-image.png" alt="" class="small-image-group__third img"></picture>
+							</div>
+							<picture><source srcset="img/main.webp" type="image/webp"><img src="img/main.png" alt="" class="main-section__oval-image"></picture>
 						</div>
-						<div class="small-image-group flex">
-							<img src="img/first-image.png" alt="" class="small-image-group__first img">
-							<img src="img/second-image.png" alt="" class="small-image-group__second img">
-							<img src="img/third-image.png" alt="" class="small-image-group__third img">
+						<div class="advantages">
+							<div class="advantages__block">
+								<div class="advantages__number">4</div>
+								<div class="advantages__text">года мы радуем <br>наших клиентов</div>
+							</div>
+							<div class="advantages__block">
+								<div class="advantages__number">10 000+</div>
+								<div class="advantages__text">маникюров мы сделали <br> за последний год</div>
+							</div>
+							<div class="advantages__block">
+								<div class="advantages__number">3+</div>
+								<div class="advantages__text">наши мастера имеют <br> опыт более 3 лет</div>
+							</div>
 						</div>
-						<div class="">
-							<img src="img/main.png" alt="" class="main-section__oval-image">
-						</div>
-
-					</div>
-					<div class="advantages">
-						<div class="advantages__block">
-							<div class="advantages__number">4</div>
-							<div class="advantages__text">года мы радуем <br>наших клиентов</div>
-						</div>
-						<div class="advantages__block">
-							<div class="advantages__number">10 000+</div>
-							<div class="advantages__text">маникюров мы сделали <br> за последний год</div>
-						</div>
-						<div class="advantages__block">
-							<div class="advantages__number">3+</div>
-							<div class="advantages__text">наши мастера имеют <br> опыт более 3 лет</div>
-						</div>
-					</div>
-			</section>
-		</main>
-		<footer class="footer">
+				</section>
+			</main>
+			<footer class="footer">
   <div class="container">
     <div class="flex flex-sb flex-wrap">
       <div class="footer__contacts">
         <div class="footer__logo">
-          <a href="#"><img src="img/logo-footer.png" alt="Лого"></a>
+          <a href="#"><picture><source srcset="img/logo-footer.webp" type="image/webp"><img src="img/logo-footer.png" alt="Лого"></picture></a>
         </div>
         <div class="socials flex">
           <a class="social-media instagram" href="#"></a>
@@ -118,7 +114,7 @@
     </div>
   </div>
 </footer>
-		<script src="js/app.min.js"></script>
+		</div>
+		<script src="js/app.min.js?_v=20221004160649"></script>
 	</body>
-
 </html>
