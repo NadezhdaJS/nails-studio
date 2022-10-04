@@ -1,56 +1,52 @@
 <!DOCTYPE html>
 <html lang="ru">
-<div class="content-box">
 	@@include('html/head.html',{
 	"title":"Главная"
 	})
 
 	<body>
-		@@include('html/header.html',{})
-		<main>
-			<div class="blur blur-left"></div>
-			<div class="blur blur-right"></div>
-			<section class="main-section ">
-				<div class="container">
-					<div class="main-section__description">
-						<p>XNAILS - студии маникюра в Санкт-Петербурге</p>
-						<h1 class="h1">
-							Мы знаем все о <span class="h1__uppercase-text">красивом</span> и <span
-								class="h1__uppercase-text">качественном</span> покрытии
-						</h1>
-						<div class="flex items-center">
-							<button type="button" class="button-book">Записаться</button>
-
-							<a href="" class="link pl-3">Узнать стоимость</a>
-						</div>
-						<div class="small-image-group flex">
-							<img src="img/first-image.png" alt="" class="small-image-group__first img">
-							<img src="img/second-image.png" alt="" class="small-image-group__second img">
-							<img src="img/third-image.png" alt="" class="small-image-group__third img">
-						</div>
-						<div class="">
+		<div class="content-box">
+			@@include('html/header.html',{})
+			<main>
+				<div class="blur blur-left"></div>
+				<div class="blur blur-right"></div>
+				<section class="main-section">
+					<div class="container">
+						<div class="main-section__description">
+							<p>XNAILS - студии маникюра в Санкт-Петербурге</p>
+							<h1 class="h1">
+								Мы знаем все о <span class="h1__uppercase-text">красивом</span> и <span
+									class="h1__uppercase-text">качественном</span> покрытии
+							</h1>
+							<div class="flex items-center">
+								<button type="button" class="button-book">Записаться</button>
+								<a href="" class="link ml-3">Узнать стоимость</a>
+							</div>
+							<div class="small-image-group flex">
+								<img src="img/first-image.png" alt="" class="small-image-group__first img">
+								<img src="img/second-image.png" alt="" class="small-image-group__second img">
+								<img src="img/third-image.png" alt="" class="small-image-group__third img">
+							</div>
 							<img src="img/main.png" alt="" class="main-section__oval-image">
 						</div>
-
-					</div>
-					<div class="advantages">
-						<div class="advantages__block">
-							<div class="advantages__number">4</div>
-							<div class="advantages__text">года мы радуем <br>наших клиентов</div>
+						<div class="advantages">
+							<div class="advantages__block">
+								<div class="advantages__number">4</div>
+								<div class="advantages__text">года мы радуем <br>наших клиентов</div>
+							</div>
+							<div class="advantages__block">
+								<div class="advantages__number">10 000+</div>
+								<div class="advantages__text">маникюров мы сделали <br> за последний год</div>
+							</div>
+							<div class="advantages__block">
+								<div class="advantages__number">3+</div>
+								<div class="advantages__text">наши мастера имеют <br> опыт более 3 лет</div>
+							</div>
 						</div>
-						<div class="advantages__block">
-							<div class="advantages__number">10 000+</div>
-							<div class="advantages__text">маникюров мы сделали <br> за последний год</div>
-						</div>
-						<div class="advantages__block">
-							<div class="advantages__number">3+</div>
-							<div class="advantages__text">наши мастера имеют <br> опыт более 3 лет</div>
-						</div>
-					</div>
-			</section>
-		</main>
-		@@include('html/footer.html',{})
+				</section>
+			</main>
+			@@include('html/footer.html',{})
+		</div>
 		<script src="js/app.min.js"></script>
 	</body>
-
 </html>
