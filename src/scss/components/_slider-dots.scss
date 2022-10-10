@@ -1,0 +1,15 @@
+.slider-dots {
+}
+.slider-dot {
+  display: block;
+  width: 1.3rem;
+  height: 1.3rem;
+  border-radius: 50%;
+  margin: 0 0.45rem;
+  border: 0.5px solid $black-color;
+
+  &__active {
+    border-color: transparent;
+    background: $elements-color;
+  }
+}
