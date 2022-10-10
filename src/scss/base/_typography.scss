@@ -36,3 +36,17 @@ a {
     font-size: 0.7em;
   }
 }
+
+.h2 {
+  @extend %font-second;
+  font-size: 7.2rem;
+  line-height: 8.7rem;
+  color: $black-color;
+}
+
+.h3 {
+  @extend %font-second;
+  font-size: 3.6rem;
+  line-height: 4.4rem;
+  color: $black-color;
+}

@@ -50,21 +50,3 @@ body {
 .ml-3 {
   margin-left: 3rem;
 }
-
-.blur {
-  width: 33.5rem;
-  height: 33.5rem;
-  background: $bc-ovals;
-  filter: blur(12.5rem);
-  border-radius: 50%;
-  position: absolute;
-  z-index: 100;
-  &-left {
-    top: 16rem;
-    left: 0;
-  }
-  &-right {
-    top: 66rem;
-    left: 98rem;
-  }
-}

@@ -1,0 +1,17 @@
+.blur {
+  width: 33.5rem;
+  height: 33.5rem;
+  background: $bc-ovals;
+  filter: blur(12.5rem);
+  border-radius: 50%;
+  position: absolute;
+  z-index: 100;
+  &__left {
+    top: 16rem;
+    left: 0;
+  }
+  &__right {
+    top: 66rem;
+    left: 98rem;
+  }
+}
