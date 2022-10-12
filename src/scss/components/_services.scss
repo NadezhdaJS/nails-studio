@@ -1,0 +1,53 @@
+.services {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 7rem;
+  &__menu {
+    padding: 5rem 0 3rem;
+    width: fit-content;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+  &__item {
+    list-style: none;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 9.5rem;
+  }
+
+  &__item:hover {
+    border-bottom: 2px solid $elements-color;
+    padding-bottom: 1rem;
+  }
+  &__pricing {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+  }
+  &__todos {
+  }
+  &__todo {
+  }
+  &__todo-item {
+  }
+  &__prices {
+    display: flex;
+  }
+  &__costs {
+  }
+  &__cost {
+    /* display: flex;
+    justify-content: end; */
+  }
+}
+
+.rub {
+  line-height: 5px;
+  width: 0.4em;
+  border-bottom: 1px solid $text-color-primary;
+  display: inline-block;
+}

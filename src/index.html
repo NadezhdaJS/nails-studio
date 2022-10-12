@@ -8,10 +8,11 @@
 	<div class="content-box">
 		@@include('html/header.html',{})
 		<main>
-			<div class="blur blur__left"></div>
-			<div class="blur blur__right"></div>
-			<section class="main-section">
-				<div class="container">
+			<div class="container">
+				<div class="blur blur__left"></div>
+				<div class="blur blur__right"></div>
+				<section class="main-section">
+
 					<div class="main-section__description">
 						<p>XNAILS - студии маникюра в Санкт-Петербурге</p>
 						<h1 class="h1">
@@ -42,32 +43,83 @@
 							<div class="advantages__number">3+</div>
 							<div class="advantages__text">наши мастера имеют <br> опыт более 3 лет</div>
 						</div>
-					</div>
-			</section>
-			<section class="promotions">
-				<div class="promotion ">
 
-					<div class="flex items-center promotion__inner">
+				</section>
+				<section class="promotions">
+					<div class="promotion ">
 
-						<div class="promotion__content">
-							<div class="promotion__heading">
-								Вместе дешевле!
+						<div class="flex items-center promotion__inner">
+
+							<div class="promotion__content">
+								<div class="promotion__heading">
+									Вместе дешевле!
+								</div>
+								<p class="promotion__description">
+									Расскажите о нас своим подругам, знакомым, коллегам или родственникам.<br>
+									Друг получает скидку 10% на первый визит, а вы - 10% кэшбэк с его первого визита
+								</p>
+								<a class="link">
+									Подробнее
+								</a>
 							</div>
-							<p class="promotion__description">
-								Расскажите о нас своим подругам, знакомым, коллегам или родственникам.<br>
-								Друг получает скидку 10% на первый визит, а вы - 10% кэшбэк с его первого визита
-							</p>
-							<a class="link">
-								Подробнее
-							</a>
 						</div>
 					</div>
-				</div>
-				<div class="slider-dots flex items-center jcc">
-					<span class="slider-dot slider-dot__item"></span>
-					<span class="slider-dot slider-dot__active"></span>
-				</div>
-			</section>
+					<div class="slider-dots flex items-center jcc">
+						<span class="slider-dot slider-dot__item"></span>
+						<span class="slider-dot slider-dot__active"></span>
+					</div>
+				</section>
+				<section class="our-services">
+					<h2 class="h2 text-align-c">
+						Наши услуги
+					</h2>
+					<div class="services">
+						<div class="services__menu">
+							<ul class="services__list">
+								<li class="services__item">
+									<h3 class="h3"> Маникюр</h3>
+								</li>
+								<li class="services__item">
+									<h3 class="h3">Наращивание</h3>
+								</li>
+								<li class="services__item">
+									<h3 class="h3">Педикюр</h3>
+								</li>
+								<li class="services__item">
+									<h3 class="h3">Брови</h3>
+								</li>
+							</ul>
+						</div>
+						<div class="services__pricing">
+							<div class="services__todos">
+								<ul class="services__todo">
+									<li class="services__todo-item">Снятие покрытия</li>
+									<li class="services__todo-item">Маникюр (аппаратный, комбинированный)</li>
+									<li class="services__todo-item">Покрытие гелем Luxio, oniq</li>
+									<li class="services__todo-item">Снятие + маникюр + Покрытие гелем Luxio, oniq </li>
+									<li class="services__todo-item">Дизайн ногтей</li>
+									<li class="services__todo-item">Укрепление акриловой пудрой</li>
+									<li class="services__todo-item">Укрепление гелем</li>
+									<li class="services__todo-item">Ремонт натурального ногтя</li>
+								</ul>
+							</div>
+							<div class="services__prices">
+								<ul class="services__costs">
+									<li class="services__cost">200 <span class="rub">Р</span></li>
+									<li class="services__cost">1000 <span class="rub">Р</span></li>
+									<li class="services__cost">900 <span class="rub">Р</span></li>
+									<li class="services__cost">2100 <span class="rub">Р</span></li>
+									<li class="services__cost">20-300 <span class="rub">Р</span></li>
+									<li class="services__cost">300 <span class="rub">Р</span></li>
+									<li class="services__cost">500 <span class="rub">Р</span></li>
+									<li class="services__cost">100 <span class="rub">Р</span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<button type="button" class="button-book">Записаться</button>
+				</section>
+			</div>
 		</main>
 		@@include('html/footer.html',{})
 	</div>

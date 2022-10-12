@@ -71,6 +71,10 @@ body {
   justify-content: center;
 }
 
+.text-align-c {
+  text-align: center;
+}
+
 body {
   color: #181818;
   font-family: "Raleway", sans-serif;
@@ -734,6 +738,49 @@ select {
   font-size: 4.8rem;
   line-height: 5.8rem;
 }
+.services {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 7rem;
+}
+.services__menu {
+  padding: 5rem 0 3rem;
+  width: fit-content;
+}
+.services__list {
+  display: flex;
+  align-items: center;
+}
+.services__item {
+  list-style: none;
+}
+.services__item:not(:last-child) {
+  margin-right: 9.5rem;
+}
+.services__item:hover {
+  border-bottom: 2px solid #9da57c;
+  padding-bottom: 1rem;
+}
+.services__pricing {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+.services__prices {
+  display: flex;
+}
+.services__cost {
+  /* display: flex;
+  justify-content: end; */
+}
+
+.rub {
+  line-height: 5px;
+  width: 0.4em;
+  border-bottom: 1px solid #181818;
+  display: inline-block;
+}
+
 .socials {
   margin-top: 2.7rem;
 }
@@ -818,5 +865,9 @@ select {
 }
 
 .promotions {
+  padding: 10rem 0;
+}
+
+.our-services {
   padding: 10rem 0;
 }
