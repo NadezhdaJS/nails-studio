@@ -75,6 +75,15 @@ body {
   text-align: center;
 }
 
+.polygon {
+  width: 0;
+  height: 0;
+  border-left: 0.45rem solid transparent;
+  border-right: 0.45rem solid transparent;
+  border-top: 0.75rem solid #181818;
+  display: inline-block;
+}
+
 body {
   color: #181818;
   font-family: "Raleway", sans-serif;
@@ -778,20 +787,6 @@ select {
   padding: 5rem 0 3rem;
   width: fit-content;
 }
-.services__list {
-  display: flex;
-}
-.services__item {
-  list-style: none;
-  padding-bottom: 1rem;
-  border-bottom: 2px solid transparent;
-}
-.services__item:not(:last-child) {
-  margin-right: 9.5rem;
-}
-.services__item:hover {
-  border-color: #9da57c;
-}
 .services__pricing {
   display: flex;
   justify-content: space-between;
@@ -803,6 +798,10 @@ select {
 .services__cost {
   display: flex;
   justify-content: end;
+}
+.services__drop-down-list {
+  display: flex;
+  justify-content: center;
 }
 .services__img-2 {
   position: absolute;
@@ -817,10 +816,6 @@ select {
 }
 
 .rub {
-  /* line-height: 5px;
-  width: 0.4em;
-  border-bottom: 1px solid $text-color-primary;
-  display: inline-block; */
   font-weight: 300;
   color: #484848;
   font-family: ui-serif;
@@ -882,6 +877,35 @@ select {
   margin: 0 2.7rem;
 }
 
+.studio-address-card {
+  display: flex;
+}
+.studio-address-card__location {
+  padding-left: 3rem;
+  max-width: 44rem;
+}
+.studio-address-card p {
+  margin-bottom: 3.3rem;
+}
+
+.submenu {
+  display: flex;
+}
+.submenu__item {
+  list-style: none;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid transparent;
+}
+.submenu__item--active {
+  border-color: #9da57c;
+}
+.submenu__item:hover {
+  border-color: #9da57c;
+}
+.submenu__item--services:not(:last-child) {
+  margin-right: 9.5rem;
+}
+
 .advantages {
   display: flex;
   padding-top: 15rem;
@@ -924,4 +948,13 @@ select {
   padding: 10rem 0;
   display: flex;
   position: relative;
+}
+
+.studios {
+  padding: 10rem 0;
+}
+.studios__menu {
+  display: flex;
+  justify-content: center;
+  padding: 5rem 0;
 }
