@@ -708,6 +708,11 @@ select {
   left: 96rem;
   z-index: -1;
 }
+.blur--certificate {
+  top: 24rem;
+  left: 96rem;
+  z-index: -1;
+}
 
 .button-book {
   padding: 1.3rem 2.6rem;
@@ -730,6 +735,10 @@ select {
 }
 .gift__text {
   padding-bottom: 7rem;
+  padding-top: 5rem;
+}
+.gift h2 {
+  max-width: 41rem;
 }
 
 .promotion {
@@ -910,4 +919,5 @@ select {
 .certificate {
   padding: 10rem 0;
   display: flex;
+  position: relative;
 }
