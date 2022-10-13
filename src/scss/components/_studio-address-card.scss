@@ -1,0 +1,12 @@
+.studio-address-card {
+  display: flex;
+  &__map {
+  }
+  &__location {
+    padding-left: 3rem;
+    max-width: 44rem;
+  }
+  p {
+    margin-bottom: 3.3rem;
+  }
+}

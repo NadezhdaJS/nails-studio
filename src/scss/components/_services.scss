@@ -8,22 +8,6 @@
     width: fit-content;
   }
 
-  &__list {
-    display: flex;
-  }
-  &__item {
-    list-style: none;
-    padding-bottom: 1rem;
-    border-bottom: 2px solid transparent;
-  }
-
-  &__item:not(:last-child) {
-    margin-right: 9.5rem;
-  }
-
-  &__item:hover {
-    border-color: #9da57c;
-  }
   &__pricing {
     display: flex;
     justify-content: space-between;
@@ -44,6 +28,10 @@
     display: flex;
     justify-content: end;
   }
+  &__drop-down-list {
+    display: flex;
+    justify-content: center;
+  }
   &__img-2 {
     position: absolute;
     top: 24rem;
@@ -62,10 +50,6 @@
 }
 
 .rub {
-  /* line-height: 5px;
-  width: 0.4em;
-  border-bottom: 1px solid $text-color-primary;
-  display: inline-block; */
   font-weight: 300;
   color: #484848;
   font-family: ui-serif;
