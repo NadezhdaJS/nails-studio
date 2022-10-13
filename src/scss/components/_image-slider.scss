@@ -1,0 +1,11 @@
+.image-slider {
+  display: flex;
+  justify-content: space-between;
+  &__slide {
+    max-width: 27rem;
+  }
+  &__text {
+  }
+  &__link {
+  }
+}

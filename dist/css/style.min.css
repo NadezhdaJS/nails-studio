@@ -84,6 +84,10 @@ body {
   display: inline-block;
 }
 
+iframe {
+  border: 0;
+}
+
 body {
   color: #181818;
   font-family: "Raleway", sans-serif;
@@ -750,6 +754,13 @@ select {
   max-width: 41rem;
 }
 
+.image-slider {
+  display: flex;
+  justify-content: space-between;
+}
+.image-slider__slide {
+  max-width: 27rem;
+}
 .promotion {
   background-image: url(../img/promotion.png);
   height: 41rem;
@@ -957,4 +968,8 @@ select {
   display: flex;
   justify-content: center;
   padding: 5rem 0;
+}
+
+.portfolio {
+  padding: 10rem 0;
 }
