@@ -10,10 +10,11 @@
 
   &__list {
     display: flex;
-    align-items: center;
   }
   &__item {
     list-style: none;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid transparent;
   }
 
   &__item:not(:last-child) {
@@ -21,8 +22,7 @@
   }
 
   &__item:hover {
-    border-bottom: 2px solid $elements-color;
-    padding-bottom: 1rem;
+    border-color: #9da57c;
   }
   &__pricing {
     display: flex;
@@ -61,10 +61,13 @@
   } */
 }
 
-/* .rub {
-  line-height: 5px;
+.rub {
+  /* line-height: 5px;
   width: 0.4em;
   border-bottom: 1px solid $text-color-primary;
-  display: inline-block;
+  display: inline-block; */
+  font-weight: 300;
+  color: #484848;
+  font-family: ui-serif;
+  font-style: normal;
 }
- */

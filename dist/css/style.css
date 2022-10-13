@@ -780,17 +780,17 @@ select {
 }
 .services__list {
   display: flex;
-  align-items: center;
 }
 .services__item {
   list-style: none;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid transparent;
 }
 .services__item:not(:last-child) {
   margin-right: 9.5rem;
 }
 .services__item:hover {
-  border-bottom: 2px solid #9da57c;
-  padding-bottom: 1rem;
+  border-color: #9da57c;
 }
 .services__pricing {
   display: flex;
@@ -816,13 +816,17 @@ select {
   z-index: 2;
 }
 
-/* .rub {
-  line-height: 5px;
+.rub {
+  /* line-height: 5px;
   width: 0.4em;
   border-bottom: 1px solid $text-color-primary;
-  display: inline-block;
+  display: inline-block; */
+  font-weight: 300;
+  color: #484848;
+  font-family: ui-serif;
+  font-style: normal;
 }
- */
+
 .socials {
   margin-top: 2.7rem;
 }
