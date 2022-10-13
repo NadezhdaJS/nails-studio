@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   padding-bottom: 7rem;
+
   &__menu {
     padding: 5rem 0 3rem;
     width: fit-content;
@@ -40,14 +41,30 @@
   &__costs {
   }
   &__cost {
-    /* display: flex;
-    justify-content: end; */
+    display: flex;
+    justify-content: end;
   }
+  &__img-2 {
+    position: absolute;
+    top: 24rem;
+    left: 96rem;
+  }
+  &__img-1 {
+    position: absolute;
+    top: 33rem;
+    left: 70rem;
+    z-index: 2;
+  }
+  //Для скрытия в JS
+  /* &__manicure {
+    display: none;
+  } */
 }
 
-.rub {
+/* .rub {
   line-height: 5px;
   width: 0.4em;
   border-bottom: 1px solid $text-color-primary;
   display: inline-block;
 }
+ */

@@ -5,13 +5,25 @@
   filter: blur(12.5rem);
   border-radius: 50%;
   position: absolute;
-  z-index: 100;
+
   &__left {
     top: 16rem;
     left: 0;
+    z-index: 100;
   }
   &__right {
     top: 66rem;
     left: 98rem;
+    z-index: 100;
+  }
+  &--services-left {
+    top: 20rem;
+    left: -13.5rem;
+    z-index: -1;
+  }
+  &--services-right {
+    top: 20rem;
+    left: 96rem;
+    z-index: -1;
   }
 }

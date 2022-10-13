@@ -20,4 +20,10 @@
 
 .our-services {
   padding: $pad-big;
+  position: relative;
+  color: $black-color;
+}
+.certificate {
+  padding: $pad-big;
+  display: flex;
 }

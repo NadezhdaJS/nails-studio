@@ -687,15 +687,26 @@ select {
   filter: blur(12.5rem);
   border-radius: 50%;
   position: absolute;
-  z-index: 100;
 }
 .blur__left {
   top: 16rem;
   left: 0;
+  z-index: 100;
 }
 .blur__right {
   top: 66rem;
   left: 98rem;
+  z-index: 100;
+}
+.blur--services-left {
+  top: 20rem;
+  left: -13.5rem;
+  z-index: -1;
+}
+.blur--services-right {
+  top: 20rem;
+  left: 96rem;
+  z-index: -1;
 }
 
 .button-book {
@@ -711,6 +722,14 @@ select {
 
 .button-book:hover {
   background: #9da57c;
+}
+
+.gift {
+  max-width: 50rem;
+  margin-left: 18.5rem;
+}
+.gift__text {
+  padding-bottom: 7rem;
 }
 
 .promotion {
@@ -742,6 +761,9 @@ select {
   display: flex;
   flex-direction: column;
   padding-bottom: 7rem;
+  /* &__manicure {
+    display: none;
+  } */
 }
 .services__menu {
   padding: 5rem 0 3rem;
@@ -770,17 +792,28 @@ select {
   display: flex;
 }
 .services__cost {
-  /* display: flex;
-  justify-content: end; */
+  display: flex;
+  justify-content: end;
+}
+.services__img-2 {
+  position: absolute;
+  top: 24rem;
+  left: 96rem;
+}
+.services__img-1 {
+  position: absolute;
+  top: 33rem;
+  left: 70rem;
+  z-index: 2;
 }
 
-.rub {
+/* .rub {
   line-height: 5px;
   width: 0.4em;
-  border-bottom: 1px solid #181818;
+  border-bottom: 1px solid $text-color-primary;
   display: inline-block;
 }
-
+ */
 .socials {
   margin-top: 2.7rem;
 }
@@ -870,4 +903,11 @@ select {
 
 .our-services {
   padding: 10rem 0;
+  position: relative;
+  color: #000;
+}
+
+.certificate {
+  padding: 10rem 0;
+  display: flex;
 }
