@@ -3,34 +3,21 @@
   flex-direction: column;
   padding-bottom: 7rem;
 
+  &__todos {
+    width: 100%;
+  }
   &__menu {
     padding: 5rem 0 3rem;
     width: fit-content;
   }
-
   &__pricing {
-    display: flex;
-    justify-content: space-between;
     width: 50%;
   }
-  &__todos {
-  }
-  &__todo {
-  }
-  &__todo-item {
-  }
-  &__prices {
-    display: flex;
-  }
-  &__costs {
-  }
   &__cost {
-    display: flex;
-    justify-content: end;
+    margin-left: auto;
   }
   &__drop-down-list {
-    display: flex;
-    justify-content: center;
+    padding-left: 10rem;
   }
   &__img-2 {
     position: absolute;
