@@ -794,25 +794,21 @@ select {
     display: none;
   } */
 }
+.services__todos {
+  width: 100%;
+}
 .services__menu {
   padding: 5rem 0 3rem;
   width: fit-content;
 }
 .services__pricing {
-  display: flex;
-  justify-content: space-between;
   width: 50%;
 }
-.services__prices {
-  display: flex;
-}
 .services__cost {
-  display: flex;
-  justify-content: end;
+  margin-left: auto;
 }
 .services__drop-down-list {
-  display: flex;
-  justify-content: center;
+  padding-left: 10rem;
 }
 .services__img-2 {
   position: absolute;
