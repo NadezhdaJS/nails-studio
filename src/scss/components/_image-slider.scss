@@ -1,11 +1,31 @@
 .image-slider {
   display: flex;
   justify-content: space-between;
+  position: relative;
+  cursor: pointer;
   &__slide {
     max-width: 27rem;
   }
   &__text {
+    @extend %font-second;
+    font-size: 3.6rem;
+    line-height: 4.3rem;
+    text-align: center;
+    padding-top: 3.9rem;
   }
   &__link {
+    text-decoration: underline;
+  }
+  &__control-left {
+    position: absolute;
+    top: 50%;
+    left: -6rem;
+    cursor: pointer;
+  }
+  &__control-right {
+    position: absolute;
+    top: 50%;
+    right: -6rem;
+    cursor: pointer;
   }
 }
