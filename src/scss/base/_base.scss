@@ -80,8 +80,14 @@ iframe {
   padding-top: 7.3rem;
 }
 
-details {
+details summary {
+  cursor: pointer;
 }
+
+details[open] summary {
+  display: none;
+}
+
 summary {
   list-style-type: none;
   padding-left: 0.2rem;

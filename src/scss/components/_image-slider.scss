@@ -2,9 +2,9 @@
   display: flex;
   justify-content: space-between;
   position: relative;
-  cursor: pointer;
   &__slide {
     max-width: 27rem;
+    cursor: pointer;
   }
   &__text {
     @extend %font-second;

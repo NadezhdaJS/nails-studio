@@ -7,12 +7,11 @@
     position: absolute;
     right: 0;
     top: 0;
+    z-index: 3;
     text-decoration-line: underline;
   }
   &__content {
     position: relative;
-  }
-  &__review {
   }
   &__quote {
     display: block;
@@ -29,8 +28,6 @@
   &__date {
     display: inline-flex;
     margin-left: 2.9rem;
-  }
-  &__arrows {
   }
   &__arrow {
     position: absolute;
@@ -56,8 +53,6 @@
 .rating {
   display: flex;
   margin: 1rem 0 2.3rem;
-}
-.stars {
 }
 .star {
   background-image: url(../svg/star.svg);
