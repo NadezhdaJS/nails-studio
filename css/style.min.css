@@ -881,7 +881,7 @@ select {
 }
 .reviews__arrow--right {
   background-image: url(../svg/btn-right.svg);
-  right: 2rem;
+  right: 0rem;
 }
 .reviews__text {
   max-width: 50rem;
