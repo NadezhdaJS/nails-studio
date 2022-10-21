@@ -43,3 +43,17 @@
   padding: $pad-big;
   position: relative;
 }
+.review-section {
+  display: flex;
+  padding: $pad-big;
+  flex-direction: column;
+
+  &__text {
+    width: 57%;
+    //padding-right: 3.1rem;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+}

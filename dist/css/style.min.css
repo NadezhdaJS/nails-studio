@@ -92,6 +92,16 @@ iframe {
   padding: 5rem 0;
 }
 
+.pad-73 {
+  padding-top: 7.3rem;
+}
+
+summary {
+  list-style-type: none;
+  padding-left: 0.2rem;
+  color: #ababab;
+}
+
 body {
   color: #181818;
   font-family: "Raleway", sans-serif;
@@ -114,8 +124,6 @@ a {
 }
 
 .h1 {
-  padding-top: 0.9rem;
-  padding-bottom: 7rem;
   font-size: 8rem;
   font-weight: 300;
   line-height: 9.6rem;
@@ -126,6 +134,21 @@ a {
   font-weight: 400;
   font-style: normal;
   font-size: 0.7em;
+}
+.h1__pad {
+  padding-top: 0.9rem;
+  padding-bottom: 7rem;
+}
+.h1__reviews {
+  font-size: 7.2rem;
+  line-height: 8.7rem;
+}
+.h1__normal {
+  font-weight: 400;
+  font-style: normal;
+}
+.h1__right {
+  text-align: end;
 }
 
 .h2 {
@@ -814,6 +837,67 @@ select {
   font-size: 4.8rem;
   line-height: 5.8rem;
 }
+.reviews {
+  display: flex;
+  position: relative;
+  margin-top: 11.4rem;
+  max-width: 56.7rem;
+}
+.reviews__add {
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-decoration-line: underline;
+}
+.reviews__content {
+  position: relative;
+}
+.reviews__quote {
+  display: block;
+  background-image: url(../svg/quote.svg);
+  width: 4.1rem;
+  height: 2.6rem;
+  left: -5rem;
+  top: -0.5rem;
+  position: absolute;
+}
+.reviews__name {
+  font-weight: 500;
+}
+.reviews__date {
+  display: inline-flex;
+  margin-left: 2.9rem;
+}
+.reviews__arrow {
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 1.9rem;
+  height: 3.5rem;
+}
+.reviews__arrow--left {
+  background-image: url(../svg/btn-left.svg);
+  left: -7rem;
+}
+.reviews__arrow--right {
+  background-image: url(../svg/btn-right.svg);
+  right: 2rem;
+}
+.reviews__text {
+  max-width: 50rem;
+}
+
+.rating {
+  display: flex;
+  margin: 1rem 0 2.3rem;
+}
+
+.star {
+  background-image: url(../svg/star.svg);
+  width: 1.7rem;
+  height: 1.7rem;
+}
+
 .services {
   display: flex;
   flex-direction: column;
@@ -997,4 +1081,17 @@ select {
 .portfolio {
   padding: 10rem 0;
   position: relative;
+}
+
+.review-section {
+  display: flex;
+  padding: 10rem 0;
+  flex-direction: column;
+}
+.review-section__text {
+  width: 57%;
+}
+.review-section__content {
+  display: flex;
+  justify-content: space-between;
 }

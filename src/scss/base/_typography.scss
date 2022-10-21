@@ -21,8 +21,6 @@ a {
 }
 
 .h1 {
-  padding-top: 0.9rem;
-  padding-bottom: 7rem;
   font-size: 8rem;
   @extend %font-second;
   font-weight: 300;
@@ -34,6 +32,24 @@ a {
     font-weight: 400;
     font-style: normal;
     font-size: 0.7em;
+  }
+
+  &__pad {
+    padding-top: 0.9rem;
+    padding-bottom: 7rem;
+  }
+  &__reviews {
+    //text-transform: none;
+    font-size: 7.2rem;
+    line-height: 8.7rem;
+  }
+  &__normal {
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  &__right {
+    text-align: end;
   }
 }
 
