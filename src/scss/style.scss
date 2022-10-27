@@ -4,6 +4,7 @@
 @import "abstracts/variables";
 
 @import "base/base";
+@import "base/helpers";
 @import "base/typography";
 @import "base/fonts";
 @import "base/normalize";
@@ -12,7 +13,6 @@
 @import "layout/header";
 @import "layout/footer";
 @import "layout/forms";
-@import "layout/head";
 
 @import "components/blur";
 @import "components/button";
