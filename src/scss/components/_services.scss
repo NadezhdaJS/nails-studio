@@ -23,6 +23,9 @@
     position: absolute;
     top: 24rem;
     left: 96rem;
+    @media only screen and (max-width: $bp-big) {
+      left: calc($contaiter-large - 15%);
+    }
   }
   &__img-1 {
     position: absolute;

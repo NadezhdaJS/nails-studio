@@ -7,5 +7,17 @@ $bc-color: #fffaf3;
 $elements-color: #9da57c;
 $bc-ovals: #e3ebc1;
 
+//container
+$contaiter-large: 105rem;
+
 //Paddings
 $pad-big: 10rem 0;
+$pad-medium: 6rem 0;
+
+//Adaptive
+$bp-largest: 90em; // 1440px
+$bp-large: 83.75em; // 1340px
+$bp-big: 77.5em; // 1240px
+$bp-medium: 73.125em; // 1170px
+/* $bp-small: 37.5em; // 600px
+$bp-smallest: 31.25em; // 500px */

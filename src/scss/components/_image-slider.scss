@@ -21,11 +21,17 @@
     top: 50%;
     left: -6rem;
     cursor: pointer;
+    @media only screen and (max-width: $bp-big) {
+      left: -4rem;
+    }
   }
   &__control-right {
     position: absolute;
     top: 50%;
     right: -6rem;
     cursor: pointer;
+    @media only screen and (max-width: $bp-big) {
+      right: -4rem;
+    }
   }
 }

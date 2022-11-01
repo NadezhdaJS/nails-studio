@@ -50,6 +50,9 @@ a {
 
   &__right {
     text-align: end;
+    @media only screen and (max-width: $bp-big) {
+      padding-right: 3rem;
+    }
   }
 }
 

@@ -1,5 +1,8 @@
 html {
   font-size: 62.5%; //16px = 100% always. Allow  user to change font size
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 66.66%;
+  }
 }
 
 body {
@@ -10,18 +13,18 @@ body {
   max-width: 144rem;
   margin: 0 auto;
   position: relative;
+  @media only screen and (max-width: $bp-largest) {
+    overflow-x: hidden;
+  }
 }
 
 .container {
   width: 117rem;
   margin: 0 auto;
-  @media (max-width: 1270px) {
-    width: calc(100vw - 7%);
+  @media only screen and (max-width: $bp-large) {
+    width: $contaiter-large;
   }
-  /*  @media (max-width: 767px) {
-    width: 70.8rem;
+  @media only screen and (max-width: $bp-medium) {
+    width: 99rem;
   }
-  @media (max-width: 320px) {
-    width: 29rem;
-  } */
 }

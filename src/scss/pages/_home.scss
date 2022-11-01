@@ -11,26 +11,42 @@
     top: 9.9rem;
     left: 57rem;
     z-index: 2;
+
+    @media only screen and (max-width: $bp-big) {
+      max-width: 57rem;
+    }
   }
 }
 
 .promotions {
   padding: $pad-big;
+  @media only screen and (max-width: $bp-big) {
+    padding: $pad-medium;
+  }
 }
 
 .our-services {
   padding: $pad-big;
   position: relative;
   color: $black-color;
+  @media only screen and (max-width: $bp-big) {
+    padding: $pad-medium;
+  }
 }
 .certificate {
   padding: $pad-big;
   display: flex;
   position: relative;
+  @media only screen and (max-width: $bp-big) {
+    padding: $pad-medium;
+  }
 }
 
 .studios {
   padding: $pad-big;
+  @media only screen and (max-width: $bp-big) {
+    padding: $pad-medium;
+  }
 
   &__menu {
     display: flex;
@@ -42,11 +58,17 @@
 .portfolio {
   padding: $pad-big;
   position: relative;
+  @media only screen and (max-width: $bp-big) {
+    padding: $pad-medium;
+  }
 }
 .review-section {
   display: flex;
   padding: $pad-big;
   flex-direction: column;
+  @media only screen and (max-width: $bp-big) {
+    padding: $pad-medium;
+  }
 
   &__text {
     width: 57%;

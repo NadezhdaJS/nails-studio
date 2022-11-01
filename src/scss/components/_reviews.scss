@@ -9,6 +9,9 @@
     top: 0;
     z-index: 3;
     text-decoration-line: underline;
+    @media only screen and (max-width: $bp-big) {
+      right: 3rem;
+    }
   }
   &__content {
     position: relative;
@@ -16,11 +19,14 @@
   &__quote {
     display: block;
     background-image: url(../svg/quote.svg);
-    width: 4.1rem;
-    height: 2.6rem;
+    width: 41px;
+    height: 26px;
     left: -5rem;
     top: -0.5rem;
     position: absolute;
+    @media only screen and (max-width: $bp-big) {
+      left: -4.5rem;
+    }
   }
   &__name {
     font-weight: 500;
@@ -33,17 +39,23 @@
     position: absolute;
     top: 50%;
     display: block;
-    width: 1.9rem;
-    height: 3.5rem;
+    width: 19px;
+    height: 35px;
     cursor: pointer;
   }
   &__arrow--left {
     background-image: url(../svg/btn-left.svg);
     left: -7rem;
+    @media only screen and (max-width: $bp-big) {
+      left: -4rem;
+    }
   }
   &__arrow--right {
     background-image: url(../svg/btn-right.svg);
     right: 0rem;
+    @media only screen and (max-width: $bp-big) {
+      right: 3rem;
+    }
   }
   &__text {
     max-width: 50rem;
