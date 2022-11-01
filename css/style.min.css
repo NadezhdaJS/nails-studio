@@ -11,8 +11,15 @@
   border: 1px solid #000;
 }
 
+/* $bp-small: 37.5em; // 600px
+$bp-smallest: 31.25em; // 500px */
 html {
   font-size: 62.5%;
+}
+@media only screen and (max-width: 73.125em) {
+  html {
+    font-size: 66.66%;
+  }
 }
 
 body {
@@ -25,20 +32,24 @@ body {
   margin: 0 auto;
   position: relative;
 }
+@media only screen and (max-width: 90em) {
+  .content-box {
+    overflow-x: hidden;
+  }
+}
 
 .container {
   width: 117rem;
   margin: 0 auto;
-  /*  @media (max-width: 767px) {
-    width: 70.8rem;
-  }
-  @media (max-width: 320px) {
-    width: 29rem;
-  } */
 }
-@media (max-width: 1270px) {
+@media only screen and (max-width: 83.75em) {
   .container {
-    width: calc(100vw - 7%);
+    width: 105rem;
+  }
+}
+@media only screen and (max-width: 73.125em) {
+  .container {
+    width: 99rem;
   }
 }
 
@@ -157,6 +168,11 @@ a {
 }
 .h1__right {
   text-align: end;
+}
+@media only screen and (max-width: 77.5em) {
+  .h1__right {
+    padding-right: 3rem;
+  }
 }
 
 .h2 {
@@ -813,11 +829,21 @@ select {
   left: -6rem;
   cursor: pointer;
 }
+@media only screen and (max-width: 77.5em) {
+  .image-slider__control-left {
+    left: -4rem;
+  }
+}
 .image-slider__control-right {
   position: absolute;
   top: 50%;
   right: -6rem;
   cursor: pointer;
+}
+@media only screen and (max-width: 77.5em) {
+  .image-slider__control-right {
+    right: -4rem;
+  }
 }
 
 .promotion {
@@ -859,17 +885,27 @@ select {
   z-index: 3;
   text-decoration-line: underline;
 }
+@media only screen and (max-width: 77.5em) {
+  .reviews__add {
+    right: 3rem;
+  }
+}
 .reviews__content {
   position: relative;
 }
 .reviews__quote {
   display: block;
   background-image: url(../svg/quote.svg);
-  width: 4.1rem;
-  height: 2.6rem;
+  width: 41px;
+  height: 26px;
   left: -5rem;
   top: -0.5rem;
   position: absolute;
+}
+@media only screen and (max-width: 77.5em) {
+  .reviews__quote {
+    left: -4.5rem;
+  }
 }
 .reviews__name {
   font-weight: 500;
@@ -882,17 +918,27 @@ select {
   position: absolute;
   top: 50%;
   display: block;
-  width: 1.9rem;
-  height: 3.5rem;
+  width: 19px;
+  height: 35px;
   cursor: pointer;
 }
 .reviews__arrow--left {
   background-image: url(../svg/btn-left.svg);
   left: -7rem;
 }
+@media only screen and (max-width: 77.5em) {
+  .reviews__arrow--left {
+    left: -4rem;
+  }
+}
 .reviews__arrow--right {
   background-image: url(../svg/btn-right.svg);
   right: 0rem;
+}
+@media only screen and (max-width: 77.5em) {
+  .reviews__arrow--right {
+    right: 3rem;
+  }
 }
 .reviews__text {
   max-width: 50rem;
@@ -937,6 +983,11 @@ select {
   position: absolute;
   top: 24rem;
   left: 96rem;
+}
+@media only screen and (max-width: 77.5em) {
+  .services__img-2 {
+    left: calc(105rem - 15%);
+  }
 }
 .services__img-1 {
   position: absolute;
@@ -1045,6 +1096,12 @@ select {
   justify-content: space-between;
   margin: 0 auto;
 }
+@media only screen and (max-width: 77.5em) {
+  .advantages {
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+  }
+}
 
 .advantages__number {
   font-size: 7.2rem;
@@ -1063,9 +1120,19 @@ select {
   left: 57rem;
   z-index: 2;
 }
+@media only screen and (max-width: 77.5em) {
+  .main-section__oval-image {
+    max-width: 57rem;
+  }
+}
 
 .promotions {
   padding: 10rem 0;
+}
+@media only screen and (max-width: 77.5em) {
+  .promotions {
+    padding: 6rem 0;
+  }
 }
 
 .our-services {
@@ -1073,15 +1140,30 @@ select {
   position: relative;
   color: #000;
 }
+@media only screen and (max-width: 77.5em) {
+  .our-services {
+    padding: 6rem 0;
+  }
+}
 
 .certificate {
   padding: 10rem 0;
   display: flex;
   position: relative;
 }
+@media only screen and (max-width: 77.5em) {
+  .certificate {
+    padding: 6rem 0;
+  }
+}
 
 .studios {
   padding: 10rem 0;
+}
+@media only screen and (max-width: 77.5em) {
+  .studios {
+    padding: 6rem 0;
+  }
 }
 .studios__menu {
   display: flex;
@@ -1093,11 +1175,21 @@ select {
   padding: 10rem 0;
   position: relative;
 }
+@media only screen and (max-width: 77.5em) {
+  .portfolio {
+    padding: 6rem 0;
+  }
+}
 
 .review-section {
   display: flex;
   padding: 10rem 0;
   flex-direction: column;
+}
+@media only screen and (max-width: 77.5em) {
+  .review-section {
+    padding: 6rem 0;
+  }
 }
 .review-section__text {
   width: 57%;
