@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.advantages__number, .promotion__heading, .image-slider__text, .footer__get-actions, .h3, .h2, .h1 {
+.advantages__number, .promotion-slider__heading, .image-slider__text, .footer__get-actions, .h3, .h2, .h1 {
   font-family: "Cormorant Garamond", serif;
 }
 
@@ -119,6 +119,10 @@ summary {
   list-style-type: none;
   padding-left: 0.2rem;
   color: #ababab;
+}
+
+.white {
+  color: #fff;
 }
 
 body {
@@ -846,30 +850,63 @@ select {
   }
 }
 
-.promotion {
-  background-image: url(../img/promotion.png);
+.promotion-slider {
   height: 41rem;
   background-repeat: no-repeat;
   max-width: 117rem;
   margin: 0 auto;
   margin-bottom: 5rem;
+  position: relative;
 }
-.promotion__inner {
+.promotion-slider__btn {
+  position: absolute;
+  border: 0;
+  background-color: transparent;
+  z-index: 100;
+  height: 100%;
+  width: 8%;
+  cursor: pointer;
+}
+.promotion-slider__btn-next {
+  top: 0;
+  right: 0;
+}
+.promotion-slider__btn-prev {
+  top: 0;
+  left: 0;
+}
+.promotion-slider__slide {
   height: 100%;
   padding: 0 7.2rem;
+  position: relative;
+  display: none;
 }
-.promotion__content {
+.promotion-slider__slide--active {
+  display: flex;
+}
+.promotion-slider__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.promotion-slider__content {
   padding: 3rem 5rem 3.6rem;
   max-width: 50rem;
   background: rgba(255, 255, 255, 0.01);
   backdrop-filter: blur(30px);
   margin-left: auto;
 }
-.promotion__heading {
+.promotion-slider__content--center {
+  text-align: center;
+}
+.promotion-slider__heading {
   font-weight: 400;
   color: #000;
   font-size: 4.8rem;
   line-height: 5.8rem;
+}
+.promotion-slider__heading--white {
+  color: #fff;
 }
 
 .reviews {
@@ -1043,9 +1080,12 @@ select {
   margin: 0 0.45rem;
   border: 0.5px solid #000;
 }
-.slider-dot__active {
+.slider-dot--active {
   border-color: transparent;
   background: #9da57c;
+}
+.slider-dot:hover, .slider-dot:active {
+  cursor: pointer;
 }
 
 .small-image-group {

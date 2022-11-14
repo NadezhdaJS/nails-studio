@@ -8,8 +8,12 @@
   margin: 0 0.45rem;
   border: 0.5px solid $black-color;
 
-  &__active {
+  &--active {
     border-color: transparent;
     background: $elements-color;
+  }
+  &:hover,
+  &:active {
+    cursor: pointer;
   }
 }

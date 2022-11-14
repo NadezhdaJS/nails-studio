@@ -44,25 +44,41 @@
 						</div>
 				</section>
 				<section class="promotions">
-					<div class="promotion">
-						<div class="flex items-center promotion__inner">
-							<div class="promotion__content">
-								<div class="promotion__heading">
-									Вместе дешевле!
+					<div class="promotion-slider__wrapper">
+						<div class="promotion-slider">
+							<button class="promotion-slider__btn promotion-slider__btn-next"></button>
+							<button class="promotion-slider__btn promotion-slider__btn-prev"></button>
+							<div class="flex items-center promotion-slider__slide promotion-slider__slide--active">
+								<img src="img/promotion.png" alt="" class="promotion-slider__img">
+								<div class="promotion-slider__content">
+									<div class="promotion-slider__heading">
+										Вместе дешевле!
+									</div>
+									<p class="promotion-slider__description">
+										Расскажите о нас своим подругам, знакомым, коллегам или родственникам.<br>
+										Друг получает скидку 10% на первый визит, а вы - 10% кэшбэк с его первого визита
+									</p>
+									<a class="link">
+										Подробнее
+									</a>
 								</div>
-								<p class="promotion__description">
-									Расскажите о нас своим подругам, знакомым, коллегам или родственникам.<br>
-									Друг получает скидку 10% на первый визит, а вы - 10% кэшбэк с его первого визита
-								</p>
-								<a class="link">
-									Подробнее
-								</a>
+							</div>
+							<div class="flex items-center promotion-slider__slide ">
+								<img src="img/promotion-2.png" alt="" class="promotion-slider__img">
+								<div class="promotion-slider__content promotion-slider__content--center">
+									<div class="promotion-slider__heading promotion-slider__heading--white">
+										Скидка 10% на первый визит!
+									</div>
+									<a class="link white">
+										Подробнее
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
 					<div class="slider-dots flex items-center jcc">
-						<span class="slider-dot slider-dot__item"></span>
-						<span class="slider-dot slider-dot__active"></span>
+						<span class="slider-dot slider-dot--active"></span>
+						<span class="slider-dot"></span>
 					</div>
 				</section>
 				<section class="our-services">
@@ -161,12 +177,12 @@
 					</div>
 					<img src="img/left.png" alt="" class="image-slider__control-left">
 					<img src="img/right.png" alt="" class="image-slider__control-right">
-					<div class="slider-dots flex items-center jcc">
+					<!-- <div class="slider-dots flex items-center jcc">
 						<span class="slider-dot slider-dot__item"></span>
 						<span class="slider-dot slider-dot__active"></span>
 						<span class="slider-dot slider-dot__item"></span>
 						<span class="slider-dot slider-dot__item"></span>
-					</div>
+					</div> -->
 				</section>
 				<section class="certificate">
 					<img src="img/certificate-1x.png" alt="Сертификат">
