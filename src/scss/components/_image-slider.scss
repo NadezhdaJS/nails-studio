@@ -5,6 +5,11 @@
   &__slide {
     max-width: 27rem;
     cursor: pointer;
+    display: none;
+
+    &--active {
+      display: block;
+    }
   }
   &__text {
     @extend %font-second;

@@ -2,6 +2,8 @@ import * as flsFunctions from "./modules/functions.js";
 
 flsFunctions.isWebp();
 
+//*******************Первый слайдер*******************
+
 const slides = document.querySelectorAll(".promotion-slider__slide"),
   dots = document.querySelectorAll(".slider-dot"),
   next = document.querySelector(".promotion-slider__btn-next"),
@@ -55,7 +57,63 @@ dots.forEach((item, indexDot) => {
   });
 });
 
-console.log(nextSlide);
 next.addEventListener("click", nextSlide);
 prev.addEventListener("click", prevSlide);
 setInterval(nextSlide, 3500);
+
+//*******************Второй слайдер*******************
+const slides2 = document.querySelectorAll(".image-slider__slide"),
+  dots2 = document.querySelectorAll(".dot"),
+  next2 = document.querySelector(".image-slider__control-right"),
+  prev2 = document.querySelector(".image-slider__control-left");
+let index2 = 0;
+
+const activeSlide2 = function (n) {
+  for (const slide of slides2) {
+    slide.classList.remove("image-slider__slide--active");
+  }
+  slides2[n].classList.add("image-slider__slide--active");
+};
+
+const activeDot2 = function (n) {
+  for (const dot of dots2) {
+    dot.classList.remove("dot--active");
+  }
+  dots2[n].classList.add("dot--active");
+};
+
+const prepareCurrentSlide2 = function (ind) {
+  activeSlide2(ind);
+  activeDot2(ind);
+};
+
+const nextSlide2 = function () {
+  if (index2 == slides2.length - 1) {
+    index2 = 0;
+    prepareCurrentSlide2(index2);
+  } else {
+    index2++;
+    prepareCurrentSlide2(index2);
+  }
+};
+
+const prevSlide2 = function () {
+  if (index2 == slides2.length - 1) {
+    index2 = 0;
+    prepareCurrentSlide2(index2);
+  } else {
+    index2--; //если слайдов больше 2, поставить --
+    prepareCurrentSlide2(index2);
+  }
+};
+
+dots2.forEach((item, indexDot) => {
+  item.addEventListener("click", function () {
+    index2 = indexDot;
+    prepareCurrentSlide2(index2);
+  });
+});
+
+next2.addEventListener("click", nextSlide2);
+prev2.addEventListener("click", prevSlide2);
+//setInterval(nextSlide2, 3500);
