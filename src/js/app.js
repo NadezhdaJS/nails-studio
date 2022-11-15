@@ -62,7 +62,7 @@ prev.addEventListener("click", prevSlide);
 setInterval(nextSlide, 3500);
 
 //*******************Второй слайдер*******************
-const slides2 = document.querySelectorAll(".image-slider__slide"),
+const slides2 = document.querySelectorAll(".image-slider__item"),
   dots2 = document.querySelectorAll(".dot"),
   next2 = document.querySelector(".image-slider__control-right"),
   prev2 = document.querySelector(".image-slider__control-left");
@@ -70,9 +70,9 @@ let index2 = 0;
 
 const activeSlide2 = function (n) {
   for (const slide of slides2) {
-    slide.classList.remove("image-slider__slide--active");
+    slide.classList.remove("image-slider__item--active");
   }
-  slides2[n].classList.add("image-slider__slide--active");
+  slides2[n].classList.add("image-slider__item--active");
 };
 
 const activeDot2 = function (n) {
