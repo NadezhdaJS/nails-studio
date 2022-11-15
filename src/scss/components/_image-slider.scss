@@ -1,15 +1,17 @@
 .image-slider {
-  display: flex;
-  justify-content: space-between;
   position: relative;
-  &__slide {
-    max-width: 27rem;
-    cursor: pointer;
+  &__item {
+    display: flex;
+    justify-content: space-between;
     display: none;
 
     &--active {
-      display: block;
+      display: flex;
     }
+  }
+  &__slide {
+    max-width: 27rem;
+    cursor: pointer;
   }
   &__text {
     @extend %font-second;
