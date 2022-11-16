@@ -935,6 +935,10 @@ select {
 }
 .reviews__content {
   position: relative;
+  display: none;
+}
+.reviews__content--active {
+  display: block;
 }
 .reviews__quote {
   display: block;
