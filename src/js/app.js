@@ -119,7 +119,7 @@ flsFunctions.isWebp();
 // prev2.addEventListener("click", prevSlide2);
 //setInterval(nextSlide2, 3500);
 
-import * as slider from "./modules/slider.js"
+import * as slider from "./modules/slider.js";
 
 // Первый слайдер
 slider.init({
@@ -139,4 +139,12 @@ slider.init({
   arrowLeft: ".image-slider__control-left",
   sliderActive: "image-slider__item--active",
   dotActive: "dot--active",
+});
+
+//Отзывы
+slider.init({
+  parent: ".reviews__content",
+  arrowRight: ".reviews__arrow--right",
+  arrowLeft: ".reviews__arrow--left",
+  sliderActive: "reviews__content--active",
 });

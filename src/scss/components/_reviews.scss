@@ -15,6 +15,10 @@
   }
   &__content {
     position: relative;
+    display: none;
+    &--active {
+      display: block;
+    }
   }
   &__quote {
     display: block;
